@@ -4,119 +4,69 @@
     box-sizing:border-box;
 }
 /*INICIO*/
-
-    
+   
 body{
    font-family: 'Patrick Hand SC', cursive; 
-   background-color: #C4D7B2;
+   background-color: #DDE6ED;
 }
 header{
-    background-color:#A0C49D;
+    background-color:#27374D;
 }
 p{
     font-size: 1rem;
 }
-
 .logo{
     width: 50px;
     height: 50px;
-    border-radius:30%;
+    border-radius:50%;
 }
 .carrousel img{
     height: 450px;
 }
-
-.container{
-    display: grid;
-    grid-template-areas: 
-    "catalogo catalogo publicidad"
-    "catalogo catalogo publicidad";
-    grid-template-columns: 1fr 1fr 2fr;
-    column-gap: 10px;
-    justify-content: center;
-    align-items: center;
-    
-
+.menu li a{
+    font-size: 1.2rem;
+}
+.submenu li a:hover{
+    background-color:#27374D;
+    color: white;
+}
+.iconos img{
+    margin: 10px 10px 10px 10px;
+}
+.iconos img:hover{
+    transform: scale(1.5,1.5);
 }
 .catalogo{
-    grid-area: catalogo;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    column-gap: 10px;
-    row-gap: 5px;
-    margin: 10px auto;
-    
-    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around; 
+    margin: 10px 20px 10px 20px;  
 }
 .perfume{
     width: 200px;
     text-align: center;
-
 }
 .perfume img{
     width: 100px auto;
     height: 100px auto;
-
 }
-.publicidad{
-    grid-area: publicidad;
-    
-
+.publicidad{ 
+    background-color: #526D82;
+    text-align: center;
+    width: 2000;    
 }
 .publicidad img{
-    width: 500px;
-    height:690px;
-   
+    width: 1200px;
+    padding: 20px;
 }
+
 .video{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    
-}
-.contenedor{
-   display: grid;
-   grid-template-areas: 
-   "publicidadch catalogoch catalogoch"
-   "publicidadch catalogoch catalogoch";
-   grid-template-columns: 2fr 1fr 1fr;
-   justify-content: center;
-   align-items: center;
-   column-gap: 10px;
-   margin: 20px auto;
-  
-}
-.catalogoch{
-   grid-area: catalogoch;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr ;
-   justify-content: center;
-   align-items: center;
-   column-gap: 10px;
-   row-gap: 10px;
-   margin: 10px auto;  
-   margin-right: 120px;
-
-}
-.publicidadch{
-   grid-area: publicidadch;
-   display: grid;
-   justify-content: center;
-   align-items: center;
-   margin-left: 120px;
-   
-   
-   
-}
-.publicidadch img{
-    width: 630px;
-    height: 690px;
-
+    justify-content: space-around;
+    background-color: #526D82;
+    padding: 10px;
 }
 
 /*FIN INICIO*/
@@ -127,7 +77,7 @@ h2{
     font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h3{
     font-size: 1.5rem;
@@ -138,17 +88,7 @@ h4{
     font-weight: bold;
     text-align: center;
 }
-
-.catalogo-flex{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    justify-content: space-around;  
-
-}
-
 .imagen img{
-
     width: 200px;
     height: 200px;
 }
@@ -157,12 +97,58 @@ h4{
  text-align: center;
 
 }
+.claro{
+    background-image: linear-gradient(to bottom, #27374D,#526D82,#DDE6ED); 
+    color: white;
+}
+.perfumesFem{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+.oscuro{
+    background-image: linear-gradient(to top, #27374D,#526D82,#DDE6ED);
+    color: black;
+
+}
 
 
 /*FIN ESTILO PAGINA MUJERES*/
+/*INICIO MAQUILLAJE*/
+.catalogoLabios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 100px 10px 100px;
+}
+.catalogoojos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 100px 10px 100px;
+
+}
+.catalogorostro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 100px 10px 100px;
+    
+}
+.catalogolabios{
+    background-image: linear-gradient(to top, #DDE6ED,#27374D,#526D82,);
+    color: white;
+}
+/*FIN ESTILO PAGINA MAQUILLAJE*/
+
 /*FOOTER*/
 footer{
-    background-color: #A0C49D;
+    background-color: #27374D;
 
 }
 .flex-conteiner{
@@ -171,19 +157,28 @@ footer{
     flex-wrap: nowrap;
 }
 .item{
-    margin: 20px auto;
+   margin: 20px auto;
    text-align: center;
+   color: white;
 }
+
 .item h1{
    font-size: 2rem;
    text-align: center;
    font-weight: bold;
+   color: white;
 
-} /*titulos footer*/
+} 
+/*titulos footer*/
 .item img{
     width: 30px;
     height: 30px;
-}/*Logos footer*/
+    
+}
+.item img:hover{
+    transform: scale(1.5,1.5);
+}
+/*Logos footer*/
 .mapa{
     text-align: center;
 }
@@ -198,82 +193,146 @@ footer{
     margin-bottom: 20px;
 }
 .form{
+    display: grid;
+    grid-template-areas:
+    "contacto formulario";
+    grid-template-columns: 1fr 1fr;
     text-align: center;
+    margin: 10px 50px 10px 50px;
+    border: 3px solid #27374D;
 }
-
+.contacto{
+    grid-area: contacto;
+    background-color: #526D82;
+}
+.contacto p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 10px 20px 10px 20px;
+}
+.formulario{
+    grid-area: formulario;
+    padding: 10px;
+}
 /*FIN FOOTER*/
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
+.carrousel{
+    width:100%;
+    height: 300px;
+}
 .carrousel img{
-    height: 200px;
-    width: 541px;
+    width: 100%;
+    height: 300px;
 }
+.publicidad{
+    width: 100%;
    
-h1{
-    font-size: 5px;
-}  
-.container{
-    grid-template-columns:1fr;
-    grid-template-rows: repeat(3)1fr;
-    grid-template-areas: 
-    "catalogo"
-    "catalogo"
-    "publicidad";
 }
-
 .publicidad img{
-    width: 480px;
-    height:400px;  
+    width:650px;
+    height: 250px;
 }
-
-.contenedor{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-    "catalogoch"
-    "catalogoch"
-    "publicidadch"; 
+.perfume{
+    width: 160px;
     
 }
-.catalogoch{
-    justify-content: center;
-    align-items: center;
-    margin: 5px auto;
-    
+.perfume img{
+    width: 120px;
+    margin: 10px auto;
 }
-.publicidadch{
-    justify-content: center;
-    align-items: center;  
-    margin: 5px auto;
 }
-.publicidadch img{
-    width: 480px;
-    height: 400px;
+.video iframe{
+    width: 300px;
+    height: 200px;
 }
 
-.video{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-}
 .item{
-    flex-wrap:wrap;
-    text-align:center;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto
 }
 .item h1{
     font-size: 1rem;
     
 }
 .item img{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+}
+    
+@media only screen and (max-width: 480px) {
+.carrousel img{
+    height: 200px;
+    width: 100%;
+}
+h1{
+    font-size: 5px;
+}
+.publicidad{
+    width: 100%;
+}
+.publicidad img{
+    width: 100%;
+    height: 200px;
+}  
+.catalogo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin: 10px;
+    
+}
+.perfume{
+    width: 180px;
+    height: 320px;
+    text-align: center;
+    margin: 5px;
+   
+    
+}
+.perfume img{
+    width: 190px auto;
+    height: 150px;
+   
+}
+.video{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.video iframe{
+    width: 400px;
+    height: 200px;
+    padding: 5px;
 }
 .catalogo-flex{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    
 }
+.item{
+    width: 200px;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+}
+.item h1{
+    font-size: 1rem;
+    
+}
+.item img{
+    width: 30px;
+    height: 30px;
+}
+
 .imagen{
     margin-top: 10px;
+    width: 100px;
+    
 }
 .mapa img{
     width: 100%;
@@ -284,19 +343,84 @@ h1{
     justify-content: center;
     
 }
+
+/*estilo pagina mujeres 480px*/
+
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
 }
 
 
+.imagen{
+    font-size: 1rem;
+    width: 200px;
+    height: 390px;
+    
+}
+.imagen img{
+    width: 190px;
+    height: 190px;
+    margin: 5px auto;
+    
+}
+.oscuro{
+    margin-top: 10px;
+}
+.perfumesFem{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    flex-wrap: wrap; 
+    margin: 0px 20px 0px 20px; 
+}
 
+/*estilo maquillaje para 480*/
+.labios{
+    width: 200px;
+    height: 360px;
+    margin: 5px auto;
+} 
+.labios img{
+    width: 170px;
+    height: 170px;
+}
 
+.catalogoLabios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 450px auto;
+    margin:0px 20px 0px 20px;
+}
 
+.flex-conteiner{
+    flex-wrap: wrap;   
+}
+.item h1{
+    font-size: 1rem;
+} 
+.form{
+    display: grid;
+    grid-template-areas: 
+    "contacto"
+    "formulario";
+    grid-template-columns: 1fr;
+    grid-template-rows: 580px 1fr;
 
-
-
-
-
-
-
-
+}
+.contacto{
+    grid-area: contacto;
+    
+}
+.contacto p{
+    font-size: 1.3rem;
+}
+.formulario{
+    grid-area: formulario;
+}
+}
 
 
