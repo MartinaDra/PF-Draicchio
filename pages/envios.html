@@ -8,218 +8,226 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/estilo.css">
-        <title>Piú Bella</title>
+        <link rel="stylesheet" href="../scss/estilo.css">
+        <title>Piú Bella~Envios</title>
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark">         
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class="logo" src="../imagenes/logopb.jpg"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <a class="navbar-brand logo" href="#"><img  src="../imagenes/logopb.jpg"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
+                  </button>
                     <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Fragancias
-                                </a>
-                                <ul class="dropdown-menu submenu">
-                                    <li><a class="dropdown-item" href="./femenina.html">Femenina</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="./masculinos.html">Masculina</a></li>
-                                        
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Maquillaje
-                                </a>
-                                <ul class="dropdown-menu submenu">
-                                    <li><a class="dropdown-item" href="./Labios.html">Labios</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="./Ojos.html">Ojos</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="./Rostro.html">Rostro</a></li> 
-                                </ul>
-                            </li>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 lista ">
+                        <li class="nav-item topic">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fragancias
+                            </a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a class="dropdown-item" href="./femenina.html">Femenina</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./masculinos.html">Masculina</a></li>          
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Maquillaje
+                            </a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a class="dropdown-item" href="./labios.html">Labios</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./ojos.html">Ojos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./rostro.html">Rostro</a></li>        
+                            </ul>
+                        </li>
                         </ul>
                         <div class="iconos">
                             <a href="https://www.instagram.com" target="_blank"><img src="../imagenes/instagram.png" alt="Instragram"></a>
                             <a href="https://www.facebook.com" target="_blank"><img src="../imagenes/facebook.png" alt="facebook"></a>
                         </div>
-            
+        
                     </div>
                 </div>
-            </nav>
+                
+            </nav>  
         </header>
         <main>
-            <h2>Metodos de Envio</h2>
-            <ul>
-                <li>
-                    <p>
-                        Realizamos envíos a todo el país, a través de correos privados. Si tu compra es mayor a $ 20.000, te bonificamos el 50% del envío.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        AMBA: En compras mayores a $20.000, el envío es gratis
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        También podés retirar tu pedido por nuestra red de sucursales sin costo adicional
-                    </p>
-                </li>
-            </ul>
-            <ol>
-                <li>
-                    <h3>
-                        ¿Cómo puedo saber cuál es el estado de mi pedido?  
-                    </h3>
-                    <p>
-                        Accediendo a tu cuenta desde nuestra tienda, en tu perfil encontrarás los siguientes estados de tu pedido:
-                    </p>
+            <section class="envios">
+                <h2>Metodos de Envio</h2>
+                <div class="texto">
                     <ul>
                         <li>
                             <p>
-                                Pago acreditado: tu pago fue correctamente procesado y está confirmado
+                                Realizamos envíos a todo el país, a través de correos privados. Si tu compra es mayor a $ 20.000, te bonificamos el 50% del envío.
                             </p>
                         </li>
                         <li>
                             <p>
-                                Facturado: tu pedido fue facturado y armado para su despacho.
+                                AMBA: En compras mayores a $20.000, el envío es gratis
                             </p>
                         </li>
                         <li>
                             <p>
-                                Pick-up (sólo si elegiste la opción de retiro en sucursal): Una vez que tu pedido se encuentre en la sucursal seleccionada, te llegará un mail informando que te podes acercar a retirarlo.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Pago pendiente: el mismo aún se encuentra pendiente de validación por parte del medio de pago.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Cancelado: se debe a que el medio de pago rechazó tu pago por motivos de seguridad y es necesario que vuelvas a realizar el mismo con otra tarjeta. Nosotros no tenemos injerencia en estas validaciones. Si tenés alguna duda, por favor contactanos.
+                                También podés retirar tu pedido por nuestra red de sucursales sin costo adicional
                             </p>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <h3>
-                        ¿Dónde puedo recibir mi pedido?
-                    </h3>
-                    <p>
-                        En tu domicilio, trabajo, o dirección particular que prefieras.
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        ¿Cuál es el costo del envío?
-                    </h3>
-                    <p>
-                        El valor se encuentra sujeto a la zona de entrega y peso del paquete.
-                    </p>
-                    <ul>
+                    <ol>
                         <li>
+                            <h3>
+                                ¿Cómo puedo saber cuál es el estado de mi pedido?  
+                            </h3>
                             <p>
-                                CABA y GBA: En compras con monto mayor a $20.000 el envío es gratis.
+                                Accediendo a tu cuenta desde nuestra tienda, en tu perfil encontrarás los siguientes estados de tu pedido:
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Pago acreditado: tu pago fue correctamente procesado y está confirmado
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Facturado: tu pedido fue facturado y armado para su despacho.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Pick-up (sólo si elegiste la opción de retiro en sucursal): Una vez que tu pedido se encuentre en la sucursal seleccionada, te llegará un mail informando que te podes acercar a retirarlo.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Pago pendiente: el mismo aún se encuentra pendiente de validación por parte del medio de pago.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Cancelado: se debe a que el medio de pago rechazó tu pago por motivos de seguridad y es necesario que vuelvas a realizar el mismo con otra tarjeta. Nosotros no tenemos injerencia en estas validaciones. Si tenés alguna duda, por favor contactanos.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>
+                                ¿Dónde puedo recibir mi pedido?
+                            </h3>
+                            <p>
+                                En tu domicilio, trabajo, o dirección particular que prefieras.
                             </p>
                         </li>
                         <li>
+                            <h3>
+                                ¿Cuál es el costo del envío?
+                            </h3>
                             <p>
-                                RESTO DEL PAÍS: En compras con monto mayor a $20.000, se bonifica el 50% del envío.
+                                El valor se encuentra sujeto a la zona de entrega y peso del paquete.
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        CABA y GBA: En compras con monto mayor a $20.000 el envío es gratis.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        RESTO DEL PAÍS: En compras con monto mayor a $20.000, se bonifica el 50% del envío.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>
+                                ¿Cuánto tardará en llegar mi pedido?
+                            </h3>
+                            <p>
+                                Nuestros envíos a Capital Federal tienen demora de entrega de 72hs hábiles desde el momento de la facturación. En Gran Buenos Aires el tiempo de envío es de 3 a 5 días hábiles. Resto del país entre 5 a 10 días hábiles. En eventos masivos tales como Hot Sale y Cyber Monday  este período puede extenderse.
                             </p>
                         </li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>
-                        ¿Cuánto tardará en llegar mi pedido?
-                    </h3>
-                    <p>
-                        Nuestros envíos a Capital Federal tienen demora de entrega de 72hs hábiles desde el momento de la facturación. En Gran Buenos Aires el tiempo de envío es de 3 a 5 días hábiles. Resto del país entre 5 a 10 días hábiles. En eventos masivos tales como Hot Sale y Cyber Monday  este período puede extenderse.
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        ¿Cómo sé que lo voy a recibir?
-                    </h3>
-                    <p>
-                        Cuando el servicio de mensajería tenga tu paquete en su poder vas a recibir notificaciones por correo electrónico al mail utilizado en el momento de realizar la compra.
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        ¿Qué pasa si puse mal la dirección?
-                    </h3>
-                    <p>
-                        Si te diste cuenta apenas realizaste la compra, contactanos para que podamos solucionarlo a la brevedad.
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        ¿Qué pasa si viene el correo y no estoy para recibirlo?
-                    </h3>
-                    <p>
-                        Si recibiste una visita del correo y no encontraron a nadie en el domicilio, el correo vuelve a pasar una vez más para poder entregar tu compra. En el caso de que no te encuentren en ninguna oportunidad deberás re coordinar la entrega con nosotros.
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        ¿Puedo pautar un horario para que pase el correo?
-                    </h3>
-                    <p>
-                        La entrega por correo se realiza de 9 a 18hs de lunes a viernes. Lamentablemente, por el momento, no es posible coordinar un horario exacto o acotar el rango horario de entrega.
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        ¿Que pasa si visitaron el domicilio y no encontraron a nadie?
-                    </h3>
-                    <p>
-                        El correo visita 2 veces, de no encontrar a nadie, el pedido es devuelto a nuestro depósito. Una vez que ingresa, nos contactamos por teléfono y por mail con el titular de compra, de no poder contactarnos, y no tener respuesta, se procede a reintegrar el dinero una vez pasado los 10 días. El reintegro de dinero se realiza al mismo medio de pago.
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        ¿Puedo pasar a retirar mi pedido?
-                    </h3>
-                    <p>
-                        ¡Sí! Podés retirar por nuestra red de sucursales, sin costo adicional.
-                    </p>
-                </li>
-            </ol>
-
+                        <li>
+                            <h3>
+                                ¿Cómo sé que lo voy a recibir?
+                            </h3>
+                            <p>
+                                Cuando el servicio de mensajería tenga tu paquete en su poder vas a recibir notificaciones por correo electrónico al mail utilizado en el momento de realizar la compra.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                ¿Qué pasa si puse mal la dirección?
+                            </h3>
+                            <p>
+                                Si te diste cuenta apenas realizaste la compra, contactanos para que podamos solucionarlo a la brevedad.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                ¿Qué pasa si viene el correo y no estoy para recibirlo?
+                            </h3>
+                            <p>
+                                Si recibiste una visita del correo y no encontraron a nadie en el domicilio, el correo vuelve a pasar una vez más para poder entregar tu compra. En el caso de que no te encuentren en ninguna oportunidad deberás re coordinar la entrega con nosotros.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                ¿Puedo pautar un horario para que pase el correo?
+                            </h3>
+                            <p>
+                                La entrega por correo se realiza de 9 a 18hs de lunes a viernes. Lamentablemente, por el momento, no es posible coordinar un horario exacto o acotar el rango horario de entrega.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                ¿Que pasa si visitaron el domicilio y no encontraron a nadie?
+                            </h3>
+                            <p>
+                                El correo visita 2 veces, de no encontrar a nadie, el pedido es devuelto a nuestro depósito. Una vez que ingresa, nos contactamos por teléfono y por mail con el titular de compra, de no poder contactarnos, y no tener respuesta, se procede a reintegrar el dinero una vez pasado los 10 días. El reintegro de dinero se realiza al mismo medio de pago.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                ¿Puedo pasar a retirar mi pedido?
+                            </h3>
+                            <p>
+                                ¡Sí! Podés retirar por nuestra red de sucursales, sin costo adicional.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            
         </main>
-        <footer class="flex-conteiner">
-            <div class="item">
-            <a href="./contacto.html"><img class="img" src="../imagenes/contacto.png" alt="Telefono"></a>
-            <h1>Contactanos</h1>
-            <p>Envianos un mensaje</p>
+        <footer>
+            <div class="footer-fluid">
+
+                <div class="item">
+                    <a href="./contacto.html"><img class="img" src="../imagenes/contacto.png" alt="Telefono"></a>
+                    <h1>Contactanos</h1>
+                    <p>Envianos un mensaje</p>
+                </div>
+                <div class="item">
+                    <a href="./pickup.html"><img src="../imagenes/pin.png" alt="Pick Up"></a>
+                    <h1>Pick Up Gratis</h1>
+                    <p>Encontrá la sucursal más cercana a tu domicilio</p>
+                </div>
+                <div class="item">
+                    <a href="./envios.html"><img  class="img" src="../imagenes/camion.png" alt="Envios"></a>
+                    <h1>Envio Gratis</h1>
+                    <p>En compras superiores a $20.000 en AMBA</p>
+                    </div>
+                <div class="item">
+                    <a href="./pago.html"><img class="img" src="../imagenes/tarjeta.png" alt="Metodo de Pago"></a>
+                    <h1>Metodos De Pago</h1>
+                    <p>3 cuotas sin interes con Visa y Mastercard</p>
+                </div>
             </div>
-            <div class="item">
-            <a href="./pickup.html"><img src="../imagenes/pin.png" alt="Pick Up"></a>
-            <h1>Pick Up Gratis</h1>
-            <p>Encontrá la sucursal más cercana a tu domicilio</p>
-            </div>
-            <div class="item">
-            <a href="./envios.html"><img  class="img" src="../imagenes/camion.png" alt="Envios"></a>
-            <h1>Envio Gratis</h1>
-            <p>En compras superiores a $20.000 en AMBA</p>
-            </div>
-            <div class="item">
-            <a href="./pago.html"><img class="img" src="../imagenes/tarjeta.png" alt="Metodo de Pago"></a>
-            <h1>Metodos De Pago</h1>
-            <p>3 cuotas sin interes con Visa y Mastercard</p>
-            </div>
+            
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
