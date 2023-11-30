@@ -1,0 +1,182 @@
+@mixin wrap-spacearound{
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+@mixin sizes($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+@media screen and (max-width: 480px){
+    header{
+        .container-fluid{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .carrousel{
+        img{
+            height: 40vh;
+        }
+    }
+    .catDior{
+        @include wrap-spacearound;
+        .perfume{
+            margin: 10px;
+            @include sizes(36%,54%);
+            img{
+                @include sizes(90%,130px);
+                margin: 5px auto;
+            }
+        }
+    }
+    .catCh{
+        @include wrap-spacearound;
+        .perfume{
+            margin: 10px;
+            @include sizes(36%,54%);
+            img{
+                @include sizes(90%,130px);
+                margin: 5px auto;
+            }
+        }
+    }
+
+    .publiDior-fluid{
+        img{
+            height: 190px;
+        }
+    }
+    .publiCh-fluid{
+        img{
+            height: 190px;
+        }
+    }
+    
+    .vidDior {
+        padding: 10px;
+        text-align: center;
+        iframe{
+            @include sizes(90vw,40vh);    
+        }    
+    }
+    .vidCh{ 
+        padding: 10px;
+        text-align: center;
+        iframe{
+            @include sizes(90vw,40vh);
+        }
+         
+    }
+    footer{
+        .footer-fluid{
+            @include wrap-spacearound;
+            .item{
+                margin: 5px 10px 5px 10px;
+                width: 40%;
+            }
+        }
+    }
+    
+    /*INICIO*/
+    /*FEMENINA Y MASCULINA*/
+    .claro{
+        .perfumesFem{
+            @include wrap-spacearound;
+            .imagen{
+                margin: 10px;
+                @include sizes(45%,54%);
+                img{
+                    @include sizes(90%,150px);
+                    margin: 10px auto;
+                }
+            } 
+        }
+    }
+    .oscuro{
+        .perfumesFem{
+            @include wrap-spacearound;
+            .imagen{
+                margin: 10px;
+                @include sizes(45%,54%);
+                img{
+                    @include sizes(90%,150px);
+                    margin: 10px auto;
+                }
+            } 
+        }
+        
+    }
+    /*FEMENINA Y MASCULINA*/
+    /*MAQUILLAJE*/
+    .catlabios{
+        h2{
+            font-size: $subtitulo;
+        }
+        .catLabios{
+            flex-wrap: wrap;
+            .labios{
+                @include sizes(40vw,67vh);
+                margin: 10px auto;
+                img{
+                    @include sizes(90%,50%);
+                    margin: 5px auto;
+                }
+            }
+            
+        }
+    }
+    /*MAQUILLAJE*/
+    /*PAGO*/
+    .pago{
+        h2{
+            font-size: $subtitulo;
+        }
+        
+    }
+    /*PAGO*/
+    /*ENVIOS*/
+    .envios{
+        h2{
+            font-size: $subtitulo;
+        }
+       
+    }
+    /*CONTACTO*/
+    .form{
+        display: grid;
+        grid-template-areas:
+        "contacto"
+        "formulario";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        width: 80%;
+       
+    }
+    .pickup{
+        width: 100%;
+        .contenedor-mapa{
+            flex-direction: column;
+            justify-items: center;
+            width: 100%;
+            height: auto;
+            .mapa{
+                width: 100%;
+                img{
+                  width: 90%;   
+                }
+            }
+            .busqueda{
+                width: 100%;
+                margin: 5px 25px 5px 25px;
+                form{
+                    width: 90%;
+                }
+                .sucursales{
+                  width: 90%;
+                  height: 200px;
+                }
+             }
+         } 
+    }
+
+}

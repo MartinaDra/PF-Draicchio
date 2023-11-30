@@ -1,0 +1,157 @@
+@mixin sizes($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+@media screen and (max-width: 768px){
+    header{
+        .container-fluid{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .catDior{
+       .perfume{
+            @include sizes(20%,35%);
+            img{
+                @include sizes(90%,150px);
+            }
+        } 
+    }
+    .catCh{
+        .perfume{
+            @include sizes(20%,35%);
+            img{
+                @include sizes(90%,150px);
+            }
+        } 
+    }
+    
+    .vidDior {
+        width: 100%;
+        iframe{
+            width: 100%;
+            margin: 5px;    
+        }
+    }
+    .vidCh{
+        width: 100%;
+        iframe{
+            width: 100%;
+            margin: 5px;    
+        }
+    }
+    footer{
+        .footer-fluid{
+            .item{
+                padding: 6px;
+                margin: 0px 5px 0px 5px;
+                h1{
+                    font-size: $parrado;
+                }
+                img{
+                    &:hover{
+                    transform: scale(1.3,1.3);
+                    } 
+                }
+                
+                p{
+                    font-size: $parrado;
+                }
+            }
+        }
+    }  
+    /*INICIO*/
+    /*FEMENINA Y MASCULINA*/
+    .perfumesFem{
+        flex-wrap: wrap;  
+    }
+    .imagen{
+        margin: 2px auto;
+        width: 16vw;
+        img{
+        height: 40%;
+        }
+        h5{
+            font-size: $parrado;
+        }
+    } 
+    .claro{
+        h2{ 
+            font-size: $subtitulo;
+        }
+        .perfumesFem{
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin: 0px 30px 0px 30px;
+            .imagen{
+                margin: 10px;
+                @include sizes(25%,30%);
+                img{
+                height: 150px;
+                }
+            } 
+        }
+    }
+    .oscuro{
+        h2{ 
+            font-size: $subtitulo;
+        }
+        .perfumesFem{
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin: 0px 30px 0px 30px;
+            .imagen{
+                margin: 10px;
+                @include sizes(25%,30%);
+                img{
+                height: 150px;
+                }
+            } 
+        }
+    }
+    /*FEMENINA Y MASCULINA*/
+    /*MAQUILLAJE*/
+    /*LABIOS, OJOS, ROSTRO*/
+    .catlabios{
+        h2{ 
+            font-size: $subtitulo
+        }
+        .catLabios{
+            justify-items: center;
+            
+            .labios{
+                @include sizes(20%,62vh);
+                text-align: center;
+            }
+        }
+    }
+    /*LABIOS, OJOS, ROSTRO*/
+    /*CONTACTO*/
+    .form{
+        width: 80%;
+    }
+    /*CONTACTO*/
+    .pickup{
+       .contenedor-mapa{
+           flex-direction: column;
+           width: 100%;
+           height: auto;
+           .mapa{
+                width: 100%;
+                img{
+                 width: 90%;   
+                }
+            }
+            .busqueda{
+                width: 100%;
+                margin: 10px 36px 10px 36px;
+            
+               .sucursales{
+                 width: 90%;
+                 height: 200px;
+                }
+            }
+        } 
+    }
+    
+}

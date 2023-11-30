@@ -1,0 +1,22 @@
+.lista{
+    padding:30px;
+    h2{
+        text-align: center;
+        font-size: $titulo;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .texto{
+        text-align: justify;
+
+        h3{
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        p{
+            font-size: $parrado;  
+        }     
+        
+    }
+}

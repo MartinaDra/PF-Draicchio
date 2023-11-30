@@ -1,0 +1,31 @@
+footer{
+    .footer-fluid{
+        background-color: $coloroscuro;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        .item{
+            width: 25vw;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            h1{
+                font-size: $subtitulo;
+                font-weight: bold;
+                color: white;
+            }
+            img{
+                &:hover{
+                 transform: scale(1.5,1.5);   
+                }
+                
+            } 
+            p{
+                font-size: $parrado;
+            }
+        }
+    }
+}

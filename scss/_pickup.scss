@@ -1,0 +1,47 @@
+.pickup{
+    h2{
+        font-size: $titulo;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .contenedor-mapa{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        background-color: $colormedio;
+        margin: 10px auto;
+        height: 400px;
+        .mapa{
+            width: 60%;
+            img{
+                text-align: center;
+                padding: 10px;
+                width: 90%;
+                height: 100%;
+                border-radius: 30px;
+            } 
+        }
+        .busqueda{
+            width: 40%;
+            form{
+                padding: 10px;
+                width: 90%;
+            }
+            .sucursales{
+             background-color: $colorclaro;
+             border-radius: 10px;
+             padding: 10px;
+             width: 90%;
+             height: 40%;
+            }
+    
+        }
+        
+    }
+    
+}
